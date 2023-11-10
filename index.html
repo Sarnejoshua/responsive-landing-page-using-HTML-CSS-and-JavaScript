@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>CAMERA STORE PAGE</title>
+    <link rel="stylesheet" href="uwacss.css">
+    <style type="text/css">
+        body{
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="camlogo.jpg" class="Logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">DSLR/Mirrorless</a></li>
+                    <li><a href="">Camera Accesories</a></li>
+                    <li><a href="">Microphones</a></li>
+                    <li><a href="">Flashes</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="Menu-icon" onclick="togglemenu()">
+         </div>       
+    <div class="row">
+        <div class="col-1">  
+            <h2>Sony Z-VE10</h2>
+            <h3>10 to 18mm</h3>
+            <p>Compatible/Goodlooking</p>
+            <h4>₱77700</h4>
+            <button type="button">Get it now<img src="arrow.png"></button>
+        </div>
+        <div class="col-2">
+            <img src="sony.png" class="sony">
+            <div class="color-box"></div>
+            <div class="add-btn">
+                <img src="add.png">
+                <p><small>Add to basket</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Social-links">
+        <img src="fb.png">
+        <img src="tw.png">
+        <img src="ig.png">
+    </div>
+
+</div>
+
+    <script>
+
+        var menulist= document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px"
+
+        function togglemenu(){
+
+            if(menulist.style.maxHeight == "0px")
+                    {
+                        menulist.style.maxHeight = "130px";
+                    }
+                else 
+                    {
+                        menulist.style.maxHeight = "0px";
+                    }
+                
+        }
+
+    </script>
+
+</body>
+</html>
